@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout — Isidores & Xará</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<header class="topbar"><a class="brand" href="index.html"><span>ISIDORES</span> <b>&</b> <span>XARÁ</span></a><nav><a href="index.html">Início</a><a href="livros.html">Livros</a><a href="login.html">Minha conta</a></nav></header>
+<main class="page checkout">
+<div class="checkout-grid">
+<section class="panel"><span class="eyebrow">PASSO 1</span><h1>Finalizar compra</h1><div id="checkoutItems"></div></section>
+<section class="panel"><span class="eyebrow">PASSO 2</span><h2>Dados do comprador</h2>
+<form id="checkoutForm">
+<label>Nome completo<input id="buyerName" required></label>
+<label>E-mail<input id="buyerEmail" type="email" required></label>
+<label>Telefone<input id="buyerPhone" required placeholder="Ex.: 923 000 000"></label>
+<label>Forma de pagamento<select id="paymentMethod" required><option value="">Selecione</option><option>Multicaixa Express</option><option>Transferência bancária</option></select></label>
+<div id="paymentInstructions" class="notice"></div>
+<button class="btn btn-yellow full" type="submit">📤 Enviar pedido de compra</button>
+</form></section>
+</div>
+</main>
+<script src="js/app.js"></script>
+</body>
+</html>

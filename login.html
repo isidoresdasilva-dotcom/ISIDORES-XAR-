@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minha conta — Isidores & Xará</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<header class="topbar"><a class="brand" href="index.html"><span>ISIDORES</span> <b>&</b> <span>XARÁ</span></a><nav><a href="index.html">Início</a><a href="livros.html">Livros</a></nav></header>
+<main class="auth-page">
+<div class="auth-card">
+<span class="eyebrow">ÁREA DO CLIENTE</span><h1>Entrar</h1>
+<p class="muted">Nesta V1, a conta é guardada localmente no navegador. Na próxima fase ligaremos ao Supabase.</p>
+<form id="loginForm">
+<label>Nome<input id="loginName" required placeholder="Seu nome"></label>
+<label>E-mail<input id="loginEmail" type="email" required placeholder="seu@email.com"></label>
+<button class="btn btn-blue" type="submit">Entrar</button>
+</form>
+<hr>
+<p>Administrador de demonstração:</p>
+<button class="btn btn-dark" id="adminDemo">Entrar no painel Admin</button>
+</div>
+</main>
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Isidores & Xará — livros digitais, histórias que ensinam, aventuras que marcam.">
+  <title>Isidores & Xará — Livraria Digital</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="index.html"><span>ISIDORES</span> <b>&</b> <span>XARÁ</span></a>
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="#livros">Livros</a>
+    <a href="login.html">Minha conta</a>
+    <a class="cart-link" href="checkout.html">🛒 <span id="cartCount">0</span></a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="badge">📚 LIVROS DIGITAIS</div>
+      <h1>Histórias que ensinam,<br><span>aventuras que marcam!</span></h1>
+      <p>Descubra livros digitais para aprender, crescer e imaginar.</p>
+      <div class="hero-actions">
+        <a class="btn btn-yellow" href="#livros">📚 Ver livros</a>
+        <a class="btn btn-outline" href="login.html">👤 Minha conta</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="livros">
+    <div class="section-title">
+      <div>
+        <span class="eyebrow">NOSSA BIBLIOTECA</span>
+        <h2>Livros em destaque</h2>
+      </div>
+      <a href="#livros" class="text-link">Ver todos →</a>
+    </div>
+    <div id="bookGrid" class="book-grid"></div>
+  </section>
+
+  <section class="features">
+    <article><div class="feature-icon">⚡</div><h3>Acesso rápido</h3><p>Depois da confirmação do pagamento, o livro fica disponível na sua conta.</p></article>
+    <article><div class="feature-icon">🔐</div><h3>Área do cliente</h3><p>Consulte suas compras e acesse sua biblioteca digital.</p></article>
+    <article><div class="feature-icon">💳</div><h3>Pagamento em Angola</h3><p>Transferência bancária e Multicaixa Express.</p></article>
+  </section>
+
+  <section class="cta">
+    <div>
+      <span class="eyebrow">ISIDORES & XARÁ</span>
+      <h2>Aprender também pode ser uma aventura.</h2>
+      <p>Escolha um livro e comece hoje.</p>
+    </div>
+    <a class="btn btn-yellow" href="#livros">Explorar livros</a>
+  </section>
+</main>
+
+<footer>
+  <strong>ISIDORES & XARÁ</strong>
+  <p>Histórias que ensinam, aventuras que marcam.</p>
+  <small>© <span id="year"></span> Isidores & Xará. Todos os direitos reservados.</small>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
