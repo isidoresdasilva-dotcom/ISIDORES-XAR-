@@ -1,0 +1,22 @@
+CORREÇÃO DO ISIDORES-XAR-
+
+Envie os arquivos para o repositório GitHub exatamente assim:
+
+1. Na raiz do repositório, crie/abra a pasta css e envie:
+   css/style.css
+
+2. Entre na pasta js que já existe e envie:
+   js/app.js
+
+3. Na raiz do repositório, crie a pasta images e envie:
+   images/fundo.jpg
+
+Resultado final:
+css/style.css
+js/app.js
+js/test.js
+images/fundo.jpg
+
+Não altere o index.html: ele já usa:
+<link rel="stylesheet" href="css/style.css">
+<script src="js/app.js"></script>
