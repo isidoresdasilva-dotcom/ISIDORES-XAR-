@@ -1,30 +1,33 @@
-# ISIDORES & XARÁ — V1
+# ISIDORES & XARÁ V1.1
 
-Livraria digital para venda de e-books em Angola.
+## Estrutura obrigatória
+- index.html
+- livros.html
+- login.html
+- conta.html
+- checkout.html
+- admin.html
+- favicon.svg
+- css/style.css
+- js/app.js
+- js/test.js
+- images/fundo.jpg
+- supabase/database.sql
 
-## O que já funciona nesta V1
-- Página inicial usando a imagem enviada como fundo.
-- Catálogo de livros.
-- Carrinho simples.
-- Checkout.
-- Opções de pagamento: Multicaixa Express e transferência bancária.
-- Área do cliente.
-- Pedidos guardados no navegador.
-- Painel administrativo de demonstração.
-- Confirmação manual de pagamento e liberação da biblioteca.
-- SQL inicial para migrar para Supabase.
+## Correção do erro 404 do app.js
+O HTML usa:
+`<script src="js/app.js"></script>`
 
-## Importante antes de publicar
-Substitua no checkout os dados de pagamento pelos seus dados reais.
-A V1 usa localStorage para demonstração. Para produção, ligue autenticação, banco de dados, Storage privado e RLS no Supabase.
+Logo, no GitHub o arquivo precisa estar exatamente em:
+`js/app.js`
 
-## Como testar
-Abra `index.html` no navegador ou publique a pasta no GitHub Pages.
-Fluxo:
-1. Início → Comprar.
-2. Checkout → preencher dados → escolher pagamento.
-3. Admin → confirmar pagamento.
-4. Minha conta → livro liberado.
+Não coloque `app.js` na raiz.
 
-## Próxima versão recomendada
-V2 com Supabase real, cadastro/login, upload de comprovativo, PDFs privados, URLs de download temporárias, painel de produtos e configuração dos dados bancários.
+## GitHub Pages
+Settings → Pages → Deploy from a branch → `main` → `/ (root)` → Save.
+
+Aguarde a publicação e abra o endereço do GitHub Pages.
+
+Se houver 404, confira se `js/app.js`, `css/style.css` e `images/fundo.jpg` estão no repositório exatamente com esses nomes e pastas.
+
+V1.1 inclui favicon, estrutura corrigida, catálogo, carrinho, checkout, Multicaixa Express, transferência bancária, área do cliente e painel administrativo de demonstração.

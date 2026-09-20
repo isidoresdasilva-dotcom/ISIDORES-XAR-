@@ -1,0 +1,1 @@
+console.log("✅ ISIDORES & XARÁ: JavaScript carregado corretamente.");
